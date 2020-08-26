@@ -1,0 +1,36 @@
+THIS A SOLUTION FOR WINDOWS PLATFORM IF YOU ARE USING macOS OR LINUX 
+
+    visit "docs.github.com" 
+    
+and i think you will be able to solve your problem else feel free to email me : sbdgm328@gmail.com  with subject GITHUB-"repository name"-PLATFORM ISSUE
+
+1.You first need to check if there is a SSH key in your GitHub account.
+    Rules to check:
+        1. You can go to your Github account and under settings serach for SSH and GPG keys and see there if there is key.
+
+            Github account -> settings -> SSH and GPG keys
+
+        2. Delete the exsisting key from there as it mistach with your public and private key to give remote access to your account.
+
+
+2.Then Open Git Bash. (type Git Bash on search bar of your PC) 
+
+3. On the terminal paste the below code:
+
+     $ ls -al ~/.ssh 
+
+(This will give a directory view of .ssh directory)
+
+4. Check for the  underlies files if the exits:
+    id_rsa.pub
+    id_ecdsa.pub
+    id_ed25519.pub
+
+If they are listed, delete the files from (c/users/(you)/.shh/) as there is mismatch in your private key and public key.
+As you have already deleted the key from your github account this is likely to be empty
+
+Now you are all set to create your own SSH password protected key.
+
+(Refer to the ""generate SSH key.txt"" in this repository)
+
+{{anywhere you are stuck feel free to email me : sbdgm328@gmail.com  with subject GITHUB-"repository name"}}

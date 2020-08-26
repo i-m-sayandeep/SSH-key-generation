@@ -1,0 +1,35 @@
+First add SSH key to your ssh-agent
+
+1. Paste or type the below code in the Git Bash terminal
+
+    $ eval $(ssh-agent -s)
+
+it will show ur agent pid.
+
+2. Now add the created ssh key.
+   Paste or type the below code on the Git Bash terminal
+
+        $ ssh-add ~/.ssh/id_rsa
+
+
+Now you are done with the agent.
+
+Final step!!!!!!
+
+1. On the Git Bash terminal type or paste the below snipet:
+
+        $ clip < ~/.ssh/id_rsa.pub
+
+if the "clip" doesnot work shows error just go to your .ssh folder and copy the content of "id_rsa.pub"
+
+2. Now got to your GitHub account under settings serach for SSH and GPG keys click to add SSH key or new SSH key 
+and paste the content you copied in the key field and then add SSH key 
+
+            Github account -> settings -> SSH and GPG keys -> add SSH key ->paste in key field -> add SSH key
+
+Github.com will ask for your password for confirmation and its done.
+
+Now you can push your content musing the SSH link but it is suggested to use HTTPS link.
+
+{{anywhere you are stuck feel free to email me : sbdgm328@gmail.com  with subject GITHUB-"repository name"}}
+

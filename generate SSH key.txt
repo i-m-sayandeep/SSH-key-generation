@@ -1,0 +1,36 @@
+After clearing the .ssh directory.
+
+Come back to Git Bash terminal
+
+1. Type or paste the below code in the terminal of Git Bash.
+
+    $ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+    (enter your GitHub account email address within quotes)
+
+This will create a private rsa key pair
+
+2. After few seconds a promote will come saying:
+
+    Enter a file in which to save the key (/c/Users/(you)/.ssh/id_rsa):_
+
+Just press enter as this will automatically be set to the default .shh folder in your PC.
+
+
+3. !! MOST IMPORTANT !!
+After the file path a new promote will come :
+
+    Enter passphrase:
+
+if you want your SHH key to be password protected type a password and again it will ask to re-enter for confirmation of password.
+else you just type enter to leave the SHH key public.
+
+Note: while typing the passphrase nothing will be shown in the terminal and everytime you push you need to use this passphrase.
+
+Finally Congrats you have created your own SSH key.
+
+Now final steps to add to your agent and account follow the "adding SSH key.txt" in this repository.
+
+{{anywhere you are stuck feel free to email me : sbdgm328@gmail.com  with subject GITHUB-"repository name"}}
+
+
